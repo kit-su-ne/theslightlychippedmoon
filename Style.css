@@ -35,8 +35,9 @@ body {
 
 header {
   text-align: center;
-  margin-bottom: 3rem;
-  width: 100%;
+  border-bottom: 2px solid #333; /* Change color/thickness as you like */
+  padding-bottom: 20px;          /* Adds space between text and the line */
+  margin-bottom: 30px;           /* Adds space between the line and your bio */
 }
 
 header h1 {
