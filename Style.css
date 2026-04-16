@@ -1,5 +1,5 @@
 :root {
-  --bg: #0d1117;
+  --bg: #211935;
   --fg: #e6edf3;
   --accent: #f59e0b; /* A warm, moon-like color */
   --accent-light: #fbbf24; /* Lighter shade for highlights */
@@ -55,7 +55,6 @@ header p {
 .banner-image {
   width: 100%;
   height: 300px; 
-  background-size: cover; /* Scales the image to cover the entire element */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat;
   margin-bottom: 3rem; /* Space between banner and main content */
