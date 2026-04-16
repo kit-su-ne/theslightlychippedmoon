@@ -53,6 +53,7 @@ header p {
 }
 
 .banner-image {
+  display: block;
   width: 800px;
   background-position: center; /* Centers the image */
   background-repeat: no-repeat;
