@@ -1,5 +1,5 @@
 :root {
-  --bg: #5d4893;
+  --bg: #423366;
   --fg: #e6edf3;
   --accent: #f59e0b; /* A warm, moon-like color */
   --accent-light: #fbbf24; /* Lighter shade for highlights */
@@ -135,7 +135,7 @@ a:hover {
 
 .product-photo {
   display: block;
-  max-width: 100%;
+  width: 800px;
   height: auto;
   border-radius: 8px;
   margin: 1rem auto;
