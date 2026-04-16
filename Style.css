@@ -54,7 +54,7 @@ header p {
 
 .banner-image {
   display: block;        /* Ensures it stays on its own line */
-  max-width: 70%; 
+  width: 40%; 
   margin: 0 auto 3rem;   /* Top: 0, Left/Right: auto (centers it), Bottom: 3rem */
   background-size: cover;
   background-position: center;
