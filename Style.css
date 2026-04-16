@@ -54,9 +54,7 @@ header p {
 
 .banner-image {
   display: block;        /* Ensures it stays on its own line */
-  width: 90%;            /* Or any width less than 100% */
-  max-width: 1000px;     /* Prevents it from getting too huge on big screens */
-  height: 300px; 
+  height: 100px; 
   margin: 0 auto 3rem;   /* Top: 0, Left/Right: auto (centers it), Bottom: 3rem */
   background-repeat: no-repeat;
   margin-bottom: 3rem; /* Space between banner and main content */
