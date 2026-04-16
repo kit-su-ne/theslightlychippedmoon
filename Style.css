@@ -54,8 +54,10 @@ header p {
 
 .banner-image {
   display: block;        /* Ensures it stays on its own line */
-  height: 100px; 
+  max-width: 70%; 
   margin: 0 auto 3rem;   /* Top: 0, Left/Right: auto (centers it), Bottom: 3rem */
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 3rem; /* Space between banner and main content */
   border-radius: 12px; /* Optional: to match main content rounding */
