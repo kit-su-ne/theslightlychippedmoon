@@ -41,7 +41,7 @@ header {
 }
 
 header h1 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 8vw, 3rem); /* Fluid typography: shrinks on mobile */
   color: var(--accent);
   margin-bottom: 0.5rem;
   text-shadow: 0 0 10px var(--accent-light);
@@ -66,11 +66,11 @@ header p {
 
 main {
   max-width: 800px;
-  width: 800px;
+  width: 90%;          /* This allows it to shrink on small screens */
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--border);
   border-radius: 16px;
-  padding: 3rem;
+  padding: 2rem;       /* Slightly reduced padding for mobile */
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
   text-align: center;
 }
@@ -138,7 +138,8 @@ a:hover {
 
 .product-photo {
   display: block;
-  width: 800px;
+  width: 70%;         /* Changed from 800px to 100% */
+  max-width: 600px;    /* Keeps it from getting too huge on desktop */
   height: auto;
   border-radius: 8px;
   margin: 1rem auto;
@@ -199,3 +200,20 @@ footer {
 #current p {
   margin-bottom: 10px;
   line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;     /* Less edge padding on phones */
+  }
+  
+  main {
+    padding: 1.5rem;   /* Save space inside the container */
+  }
+
+  .btn {
+    display: block;    /* Stack buttons vertically on very small screens */
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+}
