@@ -202,6 +202,25 @@ footer {
   line-height: 1.6;
 }
 
+/*past involvements*/
+#past {
+  background-color: #150124;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 5px double #555; /* A vertical accent line */
+  margin: 20px 0;
+}
+
+#past h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+#past p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
 @media (max-width: 600px) {
   body {
     padding: 1rem;     /* Less edge padding on phones */
