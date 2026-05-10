@@ -149,9 +149,27 @@ a:hover {
 /* Merchandise Grid */
 .merch-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+  /* On desktop, it will try to fit items in a smaller space */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
+  gap: 1.5rem;
+  margin: 2rem auto; /* Centers the grid */
+  
+  /* The size constraint */
+  width: 30%; 
+  min-width: 280px; /* Safety: prevents it from disappearing on small screens */
+}
+
+/* Responsive adjustment */
+@media (max-width: 1024px) {
+  .merch-grid {
+    width: 40%; /* Medium screens (tablets) */
+  }
+}
+
+@media (max-width: 600px) {
+  .merch-grid {
+    width: 50%; /* Mobile screens: take up full width for readability */
+  }
 }
 
 .merch-card {
