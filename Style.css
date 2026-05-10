@@ -146,14 +146,49 @@ a:hover {
   border: 2px solid var(--border);
 }
 
-.product-photo00 {
-  display: block;
-  width: 40%;         /* Changed from 800px to 100% */
-  max-width: 400px;    /* Keeps it from getting too huge on desktop */
-  height: auto;
-  border-radius: 8px;
-  margin: 1rem auto;
-  border: 2px solid var(--border);
+/* Merchandise Grid */
+.merch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.merch-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden; /* Keeps the image corners rounded */
+  transition: transform 0.3s ease;
+}
+
+.merch-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+}
+
+.merch-photo {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* This crops the photo to fit the box perfectly */
+  border-bottom: 1px solid var(--border);
+}
+
+.merch-info {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.merch-info h3 {
+  font-size: 1.2rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.merch-info p {
+  font-size: 0.9rem;
+  text-align: center; /* Overriding your general p {text-align: left} */
+  margin-bottom: 1.2rem;
 }
 
 /* Social Media Links */
