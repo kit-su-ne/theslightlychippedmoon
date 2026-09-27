@@ -299,3 +299,69 @@ footer {
     width: 100%;
   }
 }
+
+
+/* Sticky Navigation Bar Container */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background: rgba(66, 51, 102, 0.92); /* Higher opacity for legibility over scrolling text */
+  backdrop-filter: blur(10px);          /* Smooth frosted-glass blur */
+  border-bottom: 1px solid var(--border);
+  padding: 0.6rem 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Nav Links Layout */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allows items to cleanly flow into a second line if the screen is tiny */
+  gap: 0.8rem;
+  list-style: none;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Individual Links */
+.nav-links a {
+  color: var(--fg);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.5rem 0.8rem; /* Comfortable touch target for mobile fingers */
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  white-space: nowrap; /* Prevents text from breaking mid-word */
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--accent-light);
+  background: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+}
+
+.nav-links a.active {
+  border-bottom: 2px solid var(--accent);
+}
+
+/* Mobile Adjustments for Small Screens (Phones) */
+@media (max-width: 600px) {
+  .site-nav {
+    padding: 0.5rem 0.5rem;
+  }
+  
+  .nav-links {
+    gap: 0.4rem;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.6rem; /* Ensures links stay easy to tap without overlapping */
+  }
+}
